@@ -1,6 +1,5 @@
 def --wrapped go [
-    --versions,
-    --use(-u): string,
+    --use: string,
     ...args: string
 ] {
     let goVersion = if ($use | is-empty) { "1.23" } else { $use }
